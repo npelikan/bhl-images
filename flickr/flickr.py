@@ -91,7 +91,6 @@ def download_photos(photolist, output_dir = "images"):
 
 def main():
     args = docopt.docopt(__doc__)
-    print(args)
     if args['get-info']:
         filepath = args['--filepath'] or "photo_info.json.gz"
         get_photo_info(filepath=filepath)
